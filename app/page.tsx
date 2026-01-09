@@ -66,7 +66,7 @@ export default function Home() {
           />
         </div>
 
-        {/* TITULO SUPERIOR */}
+        {/* TITULO */}
         <h1
           style={{
             fontSize: 32,
@@ -88,7 +88,7 @@ export default function Home() {
           Atención y gestión personalizada
         </div>
 
-        {/* BOTÓN ADMIN */}
+        {/* ADMIN */}
         <div
           style={{
             background: "rgba(255,255,255,0.08)",
@@ -144,8 +144,20 @@ export default function Home() {
           Contactanos por WhatsApp para recibir asistencia personalizada.
         </div>
 
+        {/* UBICACIÓN SUTIL */}
+        <div
+          style={{
+            marginTop: 26,
+            fontSize: 11,
+            opacity: 0.35,
+            lineHeight: 1.4,
+          }}
+        >
+          📍 Pueyrredón 5371, S2000 Rosario, Santa Fe, Argentina
+        </div>
+
         {/* LEGAL */}
-        <div style={{ fontSize: 11, opacity: 0.55, marginTop: 18 }}>
+        <div style={{ fontSize: 11, opacity: 0.4, marginTop: 10 }}>
           Servicio de atención y soporte • Contacto bajo solicitud
         </div>
       </div>
