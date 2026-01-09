@@ -6,8 +6,9 @@ import { useMemo, useState } from "react";
 export default function Home() {
   const [isOpening, setIsOpening] = useState(false);
 
+  // MENSAJE NUEVO DE WHATSAPP
   const message =
-    "Hola! Quiero más información sobre el soporte y la atención personalizada. 🙌";
+    "Hola me quiero comunicar con el soporte de Tréboles Azules por el siguiente motivo: ";
 
   const whatsappUrl = useMemo(() => {
     return "https://wa.me/5493471355080?text=" + encodeURIComponent(message);
@@ -57,7 +58,7 @@ export default function Home() {
           justifyContent: "flex-start",
         }}
       >
-        {/* LOGO CENTRADO */}
+        {/* LOGO */}
         <div
           style={{
             marginBottom: 12,
@@ -141,7 +142,7 @@ export default function Home() {
           Contactanos por WhatsApp para recibir asistencia.
         </div>
 
-        {/* UBICACIÓN SUTIL */}
+        {/* UBICACIÓN */}
         <div
           style={{
             marginTop: 26,
