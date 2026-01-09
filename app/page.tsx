@@ -9,7 +9,6 @@ export default function Home() {
   const message =
     "Hola! Quiero más información sobre el soporte y la atención personalizada. 🙌";
 
-  // NUEVO NÚMERO WHATSAPP
   const whatsappUrl = useMemo(() => {
     return "https://wa.me/5493471355080?text=" + encodeURIComponent(message);
   }, []);
@@ -92,25 +91,10 @@ export default function Home() {
           style={{
             fontSize: 15,
             opacity: 0.85,
-            marginBottom: 22,
+            marginBottom: 28,
           }}
         >
           Atención y gestión personalizada
-        </div>
-
-        {/* BLOQUE ATENCIÓN */}
-        <div
-          style={{
-            background: "rgba(255,255,255,0.08)",
-            borderRadius: 18,
-            padding: "16px 18px",
-            marginBottom: 22,
-            fontSize: 18,
-            fontWeight: 700,
-            width: "100%",
-          }}
-        >
-          Atención personalizada
         </div>
 
         {/* BOTÓN WHATSAPP */}
@@ -125,7 +109,7 @@ export default function Home() {
             fontSize: 20,
             fontWeight: 800,
             textDecoration: "none",
-            marginBottom: 20,
+            marginBottom: 22,
             display: "inline-block",
             width: "100%",
             animation: "pulseWhite 2.6s ease-out infinite",
@@ -133,7 +117,7 @@ export default function Home() {
         >
           {isOpening ? "Abriendo WhatsApp..." : "Chatear por WhatsApp"}
           <div style={{ fontSize: 13, marginTop: 6, fontWeight: 500 }}>
-            Atención directa y personalizada
+            Administradora Romina
           </div>
         </a>
 
@@ -157,7 +141,7 @@ export default function Home() {
           Contactanos por WhatsApp para recibir asistencia.
         </div>
 
-        {/* UBICACIÓN */}
+        {/* UBICACIÓN SUTIL */}
         <div
           style={{
             marginTop: 26,
