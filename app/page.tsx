@@ -7,9 +7,11 @@ export default function Home() {
   const [isOpening, setIsOpening] = useState(false);
 
   const message =
-    "Hola! Quiero más información sobre el soporte y la administración. 🙌";
+    "Hola! Quiero más información sobre el soporte y la atención personalizada. 🙌";
+
+  // NUEVO NÚMERO WHATSAPP
   const whatsappUrl = useMemo(() => {
-    return "https://wa.me/5493471355052?text=" + encodeURIComponent(message);
+    return "https://wa.me/5493471355080?text=" + encodeURIComponent(message);
   }, []);
 
   const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -52,11 +54,19 @@ export default function Home() {
           textAlign: "center",
           display: "flex",
           flexDirection: "column",
+          alignItems: "center",
           justifyContent: "flex-start",
         }}
       >
-        {/* LOGO */}
-        <div style={{ marginBottom: 10 }}>
+        {/* LOGO CENTRADO */}
+        <div
+          style={{
+            marginBottom: 12,
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
           <Image
             src="/logo.png"
             alt="TA Soporte"
@@ -88,18 +98,19 @@ export default function Home() {
           Atención y gestión personalizada
         </div>
 
-        {/* ADMIN */}
+        {/* BLOQUE ATENCIÓN */}
         <div
           style={{
             background: "rgba(255,255,255,0.08)",
             borderRadius: 18,
-            padding: "16px",
+            padding: "16px 18px",
             marginBottom: 22,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: 700,
+            width: "100%",
           }}
         >
-          Administradora <strong>Romina</strong>
+          Atención personalizada
         </div>
 
         {/* BOTÓN WHATSAPP */}
@@ -116,6 +127,7 @@ export default function Home() {
             textDecoration: "none",
             marginBottom: 20,
             display: "inline-block",
+            width: "100%",
             animation: "pulseWhite 2.6s ease-out infinite",
           }}
         >
@@ -134,23 +146,25 @@ export default function Home() {
             fontSize: 14,
             lineHeight: 1.6,
             opacity: 0.9,
+            width: "100%",
           }}
         >
-          Somos un equipo de soporte y administración enfocado en brindar
-          atención clara, ordenada y responsable. Nuestro objetivo es ayudarte
-          con consultas, gestión y acompañamiento, de forma simple y directa.
+          Somos un equipo de soporte y atención dedicado a brindar respuestas
+          claras, ordenadas y responsables. Nuestro objetivo es acompañarte
+          de forma simple, directa y personalizada.
           <br />
           <br />
-          Contactanos por WhatsApp para recibir asistencia personalizada.
+          Contactanos por WhatsApp para recibir asistencia.
         </div>
 
-        {/* UBICACIÓN SUTIL */}
+        {/* UBICACIÓN */}
         <div
           style={{
             marginTop: 26,
             fontSize: 11,
             opacity: 0.35,
             lineHeight: 1.4,
+            textAlign: "center",
           }}
         >
           📍 Pueyrredón 5371, S2000 Rosario, Santa Fe, Argentina
